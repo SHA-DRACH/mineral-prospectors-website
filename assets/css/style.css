@@ -136,7 +136,7 @@ button { font: inherit; cursor: pointer; }
     background: radial-gradient(900px 500px at 85% 20%, rgba(198, 160, 82, .22), transparent 60%),
                 linear-gradient(135deg, #0F1012 0%, #1D1F23 55%, #33271A 100%);
 }
-.hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--hero-img, none) center / cover no-repeat; opacity: .28; }
+.hero__bg { position: absolute; inset: 0; z-index: -1; background: center / cover no-repeat; opacity: .28; }
 .hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--topo); background-size: 600px 420px; opacity: .16; }
 .hero__in { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, .75fr); gap: 3rem; align-items: center; }
 .hero h1 { color: #fff; }
@@ -421,7 +421,7 @@ button { font: inherit; cursor: pointer; }
 }
 
 /* ---------- Page banner photo ---------- */
-.banner::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--banner-img, none) center / cover no-repeat; opacity: .34; }
+.banner__bg { position: absolute; inset: 0; z-index: -1; background: center / cover no-repeat; opacity: .34; }
 .banner--photo::after { opacity: .1; }
 .banner--photo { background: linear-gradient(135deg, #0B0C0E, #17181B 60%, #2A2016); }
 
